@@ -1,24 +1,17 @@
+import { Container } from '@material-ui/core';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AppBarComponent from './component/Organisms/AppBarComponent';
+import { CardPost } from './CardPost';
+import CardComponent from './component/Atoms/CardComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppBarComponent/>
+      <Container fullWidth='md' style={{ display: 'flex', marginTop: 20 }}>
+        {CardPost.map((data) => <CardComponent title={data.title} date={data.date} content={data.content}/>)}
+      </Container>
     </div>
   );
 }

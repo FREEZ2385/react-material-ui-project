@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function AppBarComponent() {
+export default function AppBarComponent() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -232,5 +232,3 @@ function AppBarComponent() {
   );
 
 }
-
-export default AppBarComponent;
