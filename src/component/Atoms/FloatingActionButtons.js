@@ -8,6 +8,12 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(1),
     },
+    left: 'auto',
+    top: 'auto',
+    right: 20,
+    bottom: 20,
+    position: 'fixed',
+
   },
   extendedIcon: {
     marginRight: theme.spacing(1),

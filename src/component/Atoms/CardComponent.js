@@ -15,7 +15,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    minWidth: 270,
+    width: 270,
     marginRight: 20,
   },
   media: {
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 export default function CardComponent(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-  const {title, date, content} = props;
+  const {title, date, content, image} = props;
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -64,6 +64,8 @@ export default function CardComponent(props) {
       />
       <CardMedia
         className={classes.media}
+        image={image} 
+        title="Thumb"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
