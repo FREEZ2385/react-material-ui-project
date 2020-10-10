@@ -10,7 +10,7 @@ React의 Material UI 라이브러리만으로 응용해 작성해본 간단한 �
 
 - [Container](https://material-ui.com/components/container/)
 - [Appbar](https://material-ui.com/components/app-bar/)
-- [Card](hhttps://material-ui.com/components/cards/)
+- [Card](https://material-ui.com/components/cards/)
 - [Accordion](https://material-ui.com/components/accordion/)
 
 ## 표시 화면
